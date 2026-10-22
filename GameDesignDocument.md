@@ -107,7 +107,7 @@ This section lists the visual and audio assets needed for the game. These assets
 - **Game engine:** Unity, used to implement and assemble the complete game.
 - **Programming language:** C# for gameplay logic and interactions.
 - **Input:** Keyboard controls for driving, with interface controls for planning and selecting parts.
-- **Assets:** Team-created visual and audio assets imported into Unity.
+- **Assets:** Team-created visual and audio assets imported into Unity. Audio assets are exported WAV files.
 
 ## Team
 
@@ -121,6 +121,18 @@ This section lists the visual and audio assets needed for the game. These assets
 
 ## Deadlines
 
-### Week 1 — October 20
+### Week 1 — October 21
 
 **Responsibility: whole team.** Explore Unity and the supporting tools needed to create the game. Identify possible solutions for technical and design aspects.
+
+### Meeting 1 — October 21
+
+Riccardo Pilotto wasn't able to join the call on meet. 
+Create a Dev branch on github for developers to work on separately, merge it to the main branch when the part is ready.
+Took some minor gameplay and asset decisions. At the moment the interaction of the user with the inventory will be handled just through clicks. Next to newly substituted parts of the car will be written new in the car status.
+We will start by working on the part of the game with the mechanic driving towards the parts shop.
+Splitted tasks as follows:
+- Massimiliano Bettarello: explore ffmod implementation with unity and design changing lanes/engine sounds in supercollider or a daw.
+- Davide Crippa, Khalil Zribi: choose the type of inventory to use in unity and explore how to implement it.
+- Riccardo Pilotto: change the livery of the racecar with red #B22029 and write E90 to the side, delete the grass between lanes (just the ""3D"" one, the flat one is ok), the assets are good so it's fine to start working on little things such as trees or the signs on the side of the road
+- Christophe Karati: explore ffmod implementation with unity and design shift up/down sounds in supercollider or a daw.
