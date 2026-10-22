@@ -127,10 +127,14 @@ This section lists the visual and audio assets needed for the game. These assets
 
 ### Meeting 1 — October 21
 
-Riccardo Pilotto wasn't able to join the call on meet. 
+Riccardo Pilotto wasn't able to join the call on meet.
+
 Create a Dev branch on github for developers to work on separately, merge it to the main branch when the part is ready.
+
 Took some minor gameplay and asset decisions. At the moment the interaction of the user with the inventory will be handled just through clicks. Next to newly substituted parts of the car will be written new in the car status.
+
 We will start by working on the part of the game with the mechanic driving towards the parts shop.
+
 Splitted tasks as follows:
 - Massimiliano Bettarello: explore ffmod implementation with unity and design changing lanes/engine sounds in supercollider or a daw.
 - Davide Crippa, Khalil Zribi: choose the type of inventory to use in unity and explore how to implement it.
