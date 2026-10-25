@@ -96,7 +96,7 @@ This section lists the visual and audio assets needed for the game. These assets
 
 ### Audio assets
 
-- Engine and gear-change sounds for the driving sections.
+- Engine and gear-change sounds for the driving sections. Found a v8 engine on github with shifting effect (made with an automation on BPMs) and edited it in ablethon to make it match a less potent engine, coherently with the concept of the game
 - Collision and driving feedback sounds.
 - Interface sounds for selection, confirmation, and alerts.
 - Audio cues for component problems and completed repairs.
@@ -107,7 +107,7 @@ This section lists the visual and audio assets needed for the game. These assets
 - **Game engine:** Unity, used to implement and assemble the complete game.
 - **Programming language:** C# for gameplay logic and interactions.
 - **Input:** Keyboard controls for driving, with interface controls for planning and selecting parts.
-- **Assets:** Team-created visual and audio assets imported into Unity. Audio assets are exported WAV files.
+- **Assets:** Team-created visual and audio assets imported into Unity using FMod. Audio assets are exported WAV files. 
 
 ## Team
 
