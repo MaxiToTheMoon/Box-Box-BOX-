@@ -21,8 +21,16 @@ The player manages spare-part supply for the racing team. The objective is to ke
 Each cycle consists of three phases:
 
 1. **Manage parts and repair at the pits.** Review the current condition of the car's components and their predicted deterioration. Deposit spare parts from the vehicle's trunk into the separate pit inventory, and replace car components using parts available in either the trunk or the pit inventory. Check the remaining stock and plan what to collect next. Press **VAI!** when ready to begin the supply run.
+
+   ![Prototype screenshot of the pits (from Riccardo Pilotto)](images/box_screen.jpeg)
+
 2. **Drive to the parts shop.** Navigate a road filled with obstacles, steering and changing gears to reach the shop as quickly as possible. The time spent on the run affects whether the racing team gains or loses positions.
+
+   ![Prototype screenshot of the race to the shop (from Riccardo Pilotto)](images/run_screen.jpeg)
+
 3. **Advance the lap and load the trunk.** Arriving at the shop advances the race to the next lap and updates the car's condition by applying that lap's component deterioration. Choose which spare parts to load into the mechanic's vehicle trunk, taking its limited inventory slots into account. Press **BOX!** to return to the pits in the race phase, where the collected parts can be deposited into the pit inventory or used to replace car components alongside parts already stored at the pits.
+
+   ![Prototype screenshot of the parts shop (from Riccardo Pilotto)](images/shop_screen.jpeg)
 
 The loop repeats until the race ends. **VAI!** starts the drive to the shop, while **BOX!** takes the player from the mechanic/shop phase back to the race. The lap and car-condition update occurs upon arrival at the shop.
 
@@ -96,7 +104,7 @@ This section lists the visual and audio assets needed for the game. These assets
 
 ### Audio assets
 
-- Engine and gear-change sounds for the driving sections. Found a v8 engine on github with shifting effect (made with an automation on BPMs) and edited it in ablethon to make it match a less potent engine, coherently with the concept of the game
+- Engine and gear-change sounds for the driving sections. Found a v8 engine on github with shifting effect (made with an automation on BPMs) and edited it in ablethon to make it match a less potent V6 engine and with a different timbre, coherently with the concept of the game. Made by Massimiliano Bettarello
 - Collision and driving feedback sounds.
 - Interface sounds for selection, confirmation, and alerts.
 - Audio cues for component problems and completed repairs.
