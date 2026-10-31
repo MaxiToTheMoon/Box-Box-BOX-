@@ -135,3 +135,7 @@ crashlytics-build.properties
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# TextMesh Pro - esempi e tutorial
+/Assets/TextMesh Pro/Examples & Extras/
+/Assets/TextMesh Pro/Examples & Extras.meta
