@@ -1,4 +1,4 @@
-﻿# Box! Box! BOX!
+# Box! Box! BOX!
 
 ## Overview and vision statement
 
@@ -22,15 +22,15 @@ Each cycle consists of three phases:
 
 1. **Manage parts and repair at the pits.** Review the current condition of the car's components and their predicted deterioration. Deposit spare parts from the vehicle's trunk into the separate pit inventory, and replace car components using parts available in either the trunk or the pit inventory. Check the remaining stock and plan what to collect next. Press **VAI!** when ready to begin the supply run.
 
-   ![Prototype screenshot of the pits (from Riccardo Pilotto)](images/box_screen.jpeg)
+   ![Prototype screenshot of the pits (from Riccardo Pilotto)](../images/prototypes/box_screen.jpeg)
 
 2. **Drive to the parts shop.** Navigate a road filled with obstacles by steering and changing gears to reach the shop as quickly as possible. The time spent on the run affects whether the racing team gains or loses positions.
 
-   ![Prototype screenshot of the race to the shop (from Riccardo Pilotto)](images/run_screen.jpeg)
+   ![Prototype screenshot of the race to the shop (from Riccardo Pilotto)](../images/prototypes/run_screen.jpeg)
 
 3. **Advance the lap and load the trunk.** Arriving at the shop advances the race to the next lap and updates the car's condition by applying that lap's component deterioration. Choose which spare parts to load into the mechanic's vehicle trunk, taking its limited inventory slots into account. Press **BOX!** to return to the pits in the race phase, where the collected parts can be deposited into the pit inventory or used to replace car components alongside parts already stored at the pits.
 
-   ![Prototype screenshot of the parts shop (from Riccardo Pilotto)](images/shop_screen.jpeg)
+   ![Prototype screenshot of the parts shop (from Riccardo Pilotto)](../images/prototypes/shop_screen.jpeg)
 
 The loop repeats until the race ends. **VAI!** starts the drive to the shop, while **BOX!** takes the player from the mechanic/shop phase back to the race. The lap and car-condition update occurs upon arrival at the shop.
 
@@ -76,17 +76,17 @@ These roles establish the gameplay context. Individual names, character designs,
 
 ## World
 
-The game takes place around a race circuit and the roads connecting it to a nearby parts shop. Three locations support the gameplay loop:
+The game takes place around a race circuit and the roads connecting between it and a nearby parts shop. Three locations make the gameplay loop:
 
 - **The pits:** The area where the player checks component condition, deposits spare parts from the trunk into the pit inventory, replaces components using either inventory, and prepares the next supply run.
 - **The road:** The driving section, where obstacles challenge the player's reactions and speed.
-- **The parts shop:** Arriving here advances the lap and updates the car's condition. The player chooses which spare parts to load into the trunk and uses **BOX!** to return to the pits in the race phase.
+- **The parts shop:** Arriving here advances the lap and updates the car's condition. The player chooses which spare parts to load into the trunk and clicks **BOX!** to return to the pits in the race phase.
 
 ### Visual style
 
-The game uses a stylized 3D low-poly aesthetic, with **Crossy Road** as a visual reference. Vehicles, characters, and environments feature simple, blocky shapes, clear silhouettes, and solid colors, with limited surface detail.
+The driving section uses a stylized 3D low-poly aesthetic, with **Crossy Road** as a visual reference. The pits and parts shop use 2D illustrations.
 
-The visual direction prioritizes readability during driving: the player's vehicle, obstacles, and road boundaries should be immediately recognizable. Component icons and inventory screens should follow the same simple visual language, keeping car condition, available parts, and race information easy to read.
+Component icons and inventory screens should have a simple visual language, keeping car condition, available parts, and race information easy to read.
 
 ## Media list
 
@@ -113,10 +113,11 @@ This section lists the visual and audio assets needed for the game. These assets
 
 ## Technical specification
 
-- **Game engine:** Unity, used to implement and assemble the complete game.
+- **Game engine:** Unity 6.0 (6000.0.85f1 in the current project), used to implement and assemble the complete game.
 - **Programming language:** C# for gameplay logic and interactions.
-- **Input:** Keyboard controls for driving, with interface controls for planning and selecting parts.
-- **Assets:** Team-created visual and audio assets imported into Unity using FMod. Audio assets are exported WAV files. 
+- **Input:** Keyboard controls for driving, with mouse clicks for planning and selecting parts.
+- **Visual assets:** 3D models and 2D illustrations imported into Unity.
+- **Audio integration:** FMOD for audio playback and integration with Unity. Audio assets are exported as WAV files.
 
 ## Team
 
@@ -130,7 +131,7 @@ This section lists the visual and audio assets needed for the game. These assets
 
 ## Deadlines
 
-### Week 1 — October 21
+### Week 1
 
 **Responsibility: whole team.** Explore Unity and the supporting tools needed to create the game. Identify possible solutions for technical and design aspects.
 
@@ -144,7 +145,7 @@ Took some minor gameplay and asset decisions. At the moment the interaction of t
 
 We will start by working on the part of the game with the mechanic driving towards the parts shop.
 
-### Week 2 - October 30
+### Week 2
 
 Splitted tasks as follows:
 - Massimiliano Bettarello: explore ffmod implementation with unity and design changing lanes/engine sounds in supercollider or a daw.
@@ -159,7 +160,7 @@ Decided which inventory to use, for compatibility the team will work on Unity 6.
 Approved the sound design for the engine, the 3D model for the mechanc's car will be similar to a Fiat Panda.
 The highway for the 3D part of the gameplay will probably be procedurally generated by loading chunks as the car goes on.
 
-### Week 2 - November 6
+### Week 3
 
 Splitted tasks as follows:
 - Massimiliano Bettarello: work on the main menu, build the scenes in unity and connect them.
@@ -167,3 +168,16 @@ Splitted tasks as follows:
 - Khalil Zribi: implement the street scroll for the driving scene.
 - Christophe Karati: work on the fmod implementation, work on the remaining audio assets for the car.
 - Riccardo Pilotto: build a low poly 3D asset for the mechanic car and other components in the driving scene.
+
+## Changelog
+
+| Date | Update |
+| --- | --- |
+| October 19, 2026 | Created the initial GDD. |
+| October 22, 2026 | Updated deadlines and task assignments. |
+| October 22, 2026 | Applied document style fixes. |
+| October 25, 2026 | Expanded audio asset details and integration notes. |
+| October 25, 2026 | Added prototype screenshots and revised asset descriptions. |
+| October 31, 2026 | Added the Unity 6 project on `dev`. |
+| October 31, 2026 | Added the main menu, driving, pit, and shop scenes on `dev`. |
+| November 2, 2026 | Recorded the October 30 meeting, Unity 6.0 and FMOD decisions, revised visual assets, and November 6 tasks. |
