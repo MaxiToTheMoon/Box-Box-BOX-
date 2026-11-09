@@ -169,6 +169,41 @@ Splitted tasks as follows:
 - Christophe Karati: work on the fmod implementation, work on the remaining audio assets for the car.
 - Riccardo Pilotto: build a low poly 3D asset for the mechanic car and other components in the driving scene.
 
+### Meeting 3 - November 6
+
+Meeting with devs: Massimiliano Bettarello, Davide Crippa, Khalil Zribi.
+
+Decided the list of parts which will be part of the spare parts shop:
+- Tyres
+- Front wing
+- Rear wing
+- Brake calipers
+- Seat
+- Steering wheel
+- Pedals
+- Gearbox
+- Engine
+- Suspension
+- Helmet
+- Battery
+
+Took design decisions, the user will be able to change lanes smoothly, chunks are generated procedurally starting from prefabs and first protoype of the driving scene (made by Khalil Zribi).
+
+Inventory implemented in the shop scene (made by Davide Crippa).
+
+Main menu implemented and linking between different scenes (made by Massimiliano Bettarello).
+
+Built a mechanic's car model based on the iconic Fiat Panda (made by Riccardo Pilotto).
+
+### Week 4
+
+Splitted tasks as follows:
+- Massimiliano Bettarello: implement position, lap and race status manager.
+- Davide Crippa: continuo the shop scene implementation.
+- Khalil Zribi: continue the driving scene implementation.
+- Christophe Karati: start to implement audio in the project through fmod.
+- Riccardo Pilotto: create the 2D illustrations for the box and the shop, secondairly work on car parts models for the inventory.
+
 ## Changelog
 
 | Date | Update |
