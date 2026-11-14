@@ -12,17 +12,22 @@ public class InputHandler : MonoBehaviour
 
         //Keyboard input
         if (Keyboard.current != null) {
-            if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
+            if (Keyboard.current.aKey.isPressed)
                 input.x -= 1;
-            if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
+            if (Keyboard.current.dKey.isPressed)
                 input.x += 1;
-            if (Keyboard.current.wKey.isPressed || Keyboard.current.upArrowKey.isPressed)
-                input.y += 1;
-            if (Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed)
-                input.y -= 1;
 
             if (Keyboard.current.rKey.wasPressedThisFrame)
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+            if (Mouse.current != null)
+            {
+                if (Mouse.current.leftButton.wasPressedThisFrame)
+                    carHandler.ShiftUp();
+                    
+                if (Mouse.current.rightButton.isPressed)
+                    input.y -= 1;
+            }
         }
 
         carHandler.SetInput(input);
