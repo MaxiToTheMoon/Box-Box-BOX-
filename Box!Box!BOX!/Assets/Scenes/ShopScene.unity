@@ -152,7 +152,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -285, y: 90}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &167836011
@@ -175,8 +175,8 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 15, y: 15}
+  m_CellSize: {x: 190, y: 190}
+  m_Spacing: {x: 30, y: -90}
   m_Constraint: 1
   m_ConstraintCount: 3
 --- !u!1 &203844586
@@ -427,7 +427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -490, y: 385}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &385985522
@@ -450,10 +450,10 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 15, y: 15}
-  m_Constraint: 1
-  m_ConstraintCount: 5
+  m_CellSize: {x: 200, y: 200}
+  m_Spacing: {x: 90, y: 120}
+  m_Constraint: 2
+  m_ConstraintCount: 3
 --- !u!1 &388530054
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,17 +618,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21429bc1c04bb9145b6dd9e4156b15e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  capacity: 10
+  capacity: 12
   slotPrefab: {fileID: 2569186215359352584, guid: 315f92311513f594aadc778f7bb0f242, type: 3}
   slotsParent: {fileID: 385985521}
   initialItems:
   - {fileID: 11400000, guid: ab5b7689af00c524fa00a00656df4d07, type: 2}
   - {fileID: 11400000, guid: ab5b7689af00c524fa00a00656df4d07, type: 2}
   - {fileID: 11400000, guid: ab5b7689af00c524fa00a00656df4d07, type: 2}
+  - {fileID: 0}
   - {fileID: 11400000, guid: ac86a85d814b07b4ebf87d23153dffa3, type: 2}
   - {fileID: 11400000, guid: ac86a85d814b07b4ebf87d23153dffa3, type: 2}
   - {fileID: 11400000, guid: ea2c968d990018242940e4b1f4ac802c, type: 2}
   - {fileID: 11400000, guid: f24418ad374586f479460dbc3549b9b8, type: 2}
+  - {fileID: 0}
   - {fileID: 11400000, guid: f24418ad374586f479460dbc3549b9b8, type: 2}
   - {fileID: 11400000, guid: f24418ad374586f479460dbc3549b9b8, type: 2}
   - {fileID: 11400000, guid: f24418ad374586f479460dbc3549b9b8, type: 2}
