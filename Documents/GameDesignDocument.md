@@ -199,7 +199,23 @@ Built a mechanic's car model based on the iconic Fiat Panda (made by Riccardo Pi
 
 Splitted tasks as follows:
 - Massimiliano Bettarello: implement position, lap and race status manager.
-- Davide Crippa: continuo the shop scene implementation.
+- Davide Crippa: continue the shop scene implementation.
+- Khalil Zribi: continue the driving scene implementation.
+- Christophe Karati: start to implement audio in the project through fmod.
+- Riccardo Pilotto: create the 2D illustrations for the box and the shop, secondairly work on car parts models for the inventory.
+
+### Meeting 4 - November 14
+
+Meeting with everyone, Riccardo Pilotto wasn't able to join in.
+
+Assigned tasks, Christophe Karati will start the fmod implementation this week.
+Implemented postions, laps and race status manager. Improved the driving scene and controls for gear shifting.
+
+### Week 5
+
+Splitted tasks as follows:
+- Massimiliano Bettarello: implement fading between scenes, logic for distance and times.
+- Davide Crippa: continue the shop scene implementation.
 - Khalil Zribi: continue the driving scene implementation.
 - Christophe Karati: start to implement audio in the project through fmod.
 - Riccardo Pilotto: create the 2D illustrations for the box and the shop, secondairly work on car parts models for the inventory.
