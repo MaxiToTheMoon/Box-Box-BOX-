@@ -75,4 +75,10 @@ public class InventorySlot : MonoBehaviour,
     {
         dragController.DropOn(this);
     }
+
+    public void SetIconVisible(bool visible)
+    {
+        if (itemIcon != null)
+            itemIcon.enabled = visible && item != null;
+    }
 }

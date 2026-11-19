@@ -23,18 +23,12 @@ public class InventoryDragController : MonoBehaviour
 
         sourceSlot = source;
 
-        // Use the item's icon when available.
-        if (source.item.icon != null)
-        {
-            dragIcon.sprite = source.item.icon;
-            dragIcon.color = Color.white;
-        }
-        else
-        {
-            // Otherwise, use its configured color.
-            dragIcon.sprite = null;
-        }
+        // Hide the original item icon.
+        source.SetIconVisible(false);
 
+        // Display the dragged item.
+        dragIcon.sprite = source.item.icon;
+        dragIcon.color = Color.white;
         dragIcon.preserveAspect = true;
         dragIcon.enabled = true;
         dragIcon.gameObject.SetActive(true);
@@ -56,11 +50,26 @@ public class InventoryDragController : MonoBehaviour
         if (sourceSlot == null || destination == null)
             return;
 
-        Inventory.TransferItem(sourceSlot, destination);
+        bool success = Inventory.TransferItem(
+            sourceSlot,
+            destination
+        );
+
+        // If the transfer failed, restore the original icon.
+        if (!success)
+        {
+            sourceSlot.SetIconVisible(true);
+        }
     }
 
     public void EndDrag()
     {
+        // Restore the original icon if the item wasn't moved.
+        if (sourceSlot != null && sourceSlot.item != null)
+        {
+            sourceSlot.SetIconVisible(true);
+        }
+
         sourceSlot = null;
 
         dragIcon.sprite = null;
