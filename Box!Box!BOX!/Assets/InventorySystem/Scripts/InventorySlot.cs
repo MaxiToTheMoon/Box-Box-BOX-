@@ -38,12 +38,13 @@ public class InventorySlot : MonoBehaviour,
         {
             if (item != null)
             {
-                itemIcon.sprite = null;
-                itemIcon.enabled = true;
+                itemIcon.sprite = item.icon;
+                itemIcon.color = Color.white;
+                itemIcon.enabled = item.icon != null;
             }
             else
             {
-                itemIcon.color = Color.white;
+                itemIcon.sprite = null;
                 itemIcon.enabled = false;
             }
         }

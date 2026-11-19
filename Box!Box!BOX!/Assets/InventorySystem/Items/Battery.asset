@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f39b6e68a58d6de45aaa96c4dcbbc1e3, type: 3}
-  m_Name: Sword
+  m_Name: Battery
   m_EditorClassIdentifier: 
-  itemName: Sword
-  icon: {fileID: 2169420019588148566, guid: 1e40a0c373f60214fb805279125fcf3b, type: 3}
-  description: This is a Sword
+  itemName: Battery
+  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  description: 
   isStackable: 0
-  maxStack: 1
+  maxStack: 0

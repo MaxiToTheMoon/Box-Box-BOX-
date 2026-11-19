@@ -642,8 +642,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -905,18 +905,18 @@ MonoBehaviour:
   slotPrefab: {fileID: 2569186215359352584, guid: 315f92311513f594aadc778f7bb0f242, type: 3}
   slotsParent: {fileID: 385985521}
   initialItems:
-  - {fileID: 11400000, guid: ab5b7689af00c524fa00a00656df4d07, type: 2}
-  - {fileID: 11400000, guid: ab5b7689af00c524fa00a00656df4d07, type: 2}
-  - {fileID: 11400000, guid: ab5b7689af00c524fa00a00656df4d07, type: 2}
-  - {fileID: 0}
-  - {fileID: 11400000, guid: ac86a85d814b07b4ebf87d23153dffa3, type: 2}
-  - {fileID: 11400000, guid: ac86a85d814b07b4ebf87d23153dffa3, type: 2}
-  - {fileID: 11400000, guid: ea2c968d990018242940e4b1f4ac802c, type: 2}
-  - {fileID: 11400000, guid: f24418ad374586f479460dbc3549b9b8, type: 2}
-  - {fileID: 0}
-  - {fileID: 11400000, guid: f24418ad374586f479460dbc3549b9b8, type: 2}
-  - {fileID: 11400000, guid: f24418ad374586f479460dbc3549b9b8, type: 2}
-  - {fileID: 11400000, guid: f24418ad374586f479460dbc3549b9b8, type: 2}
+  - {fileID: 11400000, guid: b0c61bc1c31a7ef43aa5df8547f2b629, type: 2}
+  - {fileID: 11400000, guid: 5fc7f6039505ad841b01d7c46618ea5c, type: 2}
+  - {fileID: 11400000, guid: fa253bfc5431119439bd92497c44a5a1, type: 2}
+  - {fileID: 11400000, guid: ae580dbb4bc159e42919de3cf0bad42a, type: 2}
+  - {fileID: 11400000, guid: 77ccec21b5a5550439a1e33e1cc70bce, type: 2}
+  - {fileID: 11400000, guid: b62a139e13e72514ca6aa4564f12ecce, type: 2}
+  - {fileID: 11400000, guid: 06e716931fcadf44fbcdccf2167adc3f, type: 2}
+  - {fileID: 11400000, guid: 0d5d54fdd4ba47b46856eafb704a01f1, type: 2}
+  - {fileID: 11400000, guid: 10bd93fa256f12d40b9cfd6a7679a752, type: 2}
+  - {fileID: 11400000, guid: f071112eec09cdb409699c5c931d9662, type: 2}
+  - {fileID: 11400000, guid: a83f173d54017194598f4d3735e42a64, type: 2}
+  - {fileID: 11400000, guid: caeb4e1de10e23044ab018f15eda52d6, type: 2}
   dragController: {fileID: 1063382975}
 --- !u!1 &819074107
 GameObject:

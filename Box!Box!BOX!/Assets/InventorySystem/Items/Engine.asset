@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f39b6e68a58d6de45aaa96c4dcbbc1e3, type: 3}
-  m_Name: Axe
+  m_Name: Engine
   m_EditorClassIdentifier: 
-  itemName: Axe
-  icon: {fileID: 1158618136105128372, guid: 9897c7e33baddeb4a99fd2aac918be80, type: 3}
-  description: This is an Axe
+  itemName: Engine
+  icon: {fileID: -7832214784768987486, guid: 9c5ecedcaa1ef974190981d36b3bd765, type: 3}
+  description: 
   isStackable: 0
-  maxStack: 1
+  maxStack: 0

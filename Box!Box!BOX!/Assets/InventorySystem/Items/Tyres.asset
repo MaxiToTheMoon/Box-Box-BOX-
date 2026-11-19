@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f39b6e68a58d6de45aaa96c4dcbbc1e3, type: 3}
-  m_Name: Bow
+  m_Name: Tyres
   m_EditorClassIdentifier: 
-  itemName: Bow
-  icon: {fileID: -415446080585258355, guid: bdf1f8e82cc1a11429155e6bb43b6da4, type: 3}
-  description: This is a bow
+  itemName: Tyres
+  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  description: 
   isStackable: 0
-  maxStack: 1
+  maxStack: 0
