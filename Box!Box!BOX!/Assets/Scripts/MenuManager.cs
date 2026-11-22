@@ -1,11 +1,10 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("PitScene");
+        SceneFader.Instance.LoadScene("PitScene");
     }
     public void QuitGame()
     {

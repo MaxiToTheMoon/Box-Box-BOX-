@@ -18,7 +18,7 @@ public class InputHandler : MonoBehaviour
                 input.x += 1;
 
             if (Keyboard.current.rKey.wasPressedThisFrame)
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                SceneFader.Instance.LoadScene(SceneManager.GetActiveScene().name);
 
             if (Mouse.current != null)
             {
