@@ -14,8 +14,9 @@ public class RaceHUD : MonoBehaviour
             return;
 
         positionText.SetText(
-            "<size=22>POSITION</size>\n<b>{0}°</b>",
-            race.Position
+            "<size=22>POSITION</size>\n<b>{0}° / {1}</b>",
+            race.Position,
+            race.Competitors
         );
 
         lapText.SetText(
