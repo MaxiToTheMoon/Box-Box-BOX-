@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="Workspace" id="{39d39420-7809-468f-b252-4ffcb0811e4f}">
+		<property name="builtBanksOutputDirectory">
+			<value>../../../../../Documents/GitHub/Box-Box-BOX-/Box!Box!BOX!/Fmod for BOXboxbox</value>
+		</property>
+		<relationship name="masterEventFolder">
+			<destination>{7418bd93-66f7-41b0-84c7-450124e21aed}</destination>
+		</relationship>
+		<relationship name="masterTagFolder">
+			<destination>{1f24284f-47a4-4e2a-8048-82ecadbbc989}</destination>
+		</relationship>
+		<relationship name="masterEffectPresetFolder">
+			<destination>{87b7618d-c00b-4451-ac7b-9e63f4e817ba}</destination>
+		</relationship>
+		<relationship name="masterParameterPresetFolder">
+			<destination>{d65cc9b9-4ef6-4c3a-9150-2ee4ea8f4d3b}</destination>
+		</relationship>
+		<relationship name="masterBankFolder">
+			<destination>{3ad25775-44dd-4a51-a79a-1223d78ecd63}</destination>
+		</relationship>
+		<relationship name="masterSandboxFolder">
+			<destination>{bc6b6e6f-7f49-4e03-98b2-ce7d8a892042}</destination>
+		</relationship>
+		<relationship name="masterAssetFolder">
+			<destination>{88fdbbf0-5a55-479e-8e1d-4dddf74994d7}</destination>
+		</relationship>
+		<relationship name="mixer">
+			<destination>{a6664ab5-6cb6-463a-b93c-893ccbddcab6}</destination>
+		</relationship>
+		<relationship name="profilerSessionFolder">
+			<destination>{fd04dcb5-c0fc-4fc9-be31-81c535523600}</destination>
+		</relationship>
+		<relationship name="platforms">
+			<destination>{33dcc7d5-cb16-4525-802c-e95fe9c99980}</destination>
+		</relationship>
+	</object>
+</objects>

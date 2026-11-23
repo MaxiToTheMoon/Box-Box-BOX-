@@ -1,0 +1,402 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7640515821788180462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/decc4
+  m_EditorClassIdentifier: 
+  Path: event:/decc4
+  Guid:
+    Data1: 116036289
+    Data2: 1094323473
+    Data3: -163152230
+    Data4: -2003501113
+  Banks:
+  - {fileID: -5484539839232782520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-7596317117741908542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/acceleration sounds .bank
+  m_EditorClassIdentifier: 
+  Path: Fmod for BOXboxbox/Desktop/acceleration sounds .bank
+  Name: 'acceleration sounds '
+  StudioPath: 'bank:/acceleration sounds '
+  lastModified: 639310518287909624
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-7009350878482633093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/acc2
+  m_EditorClassIdentifier: 
+  Path: event:/acc2
+  Guid:
+    Data1: 419286773
+    Data2: 1304966047
+    Data3: 1207490237
+    Data4: -1605390028
+  Banks:
+  - {fileID: -7596317117741908542}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5484539839232782520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/deceleration sounds.bank
+  m_EditorClassIdentifier: 
+  Path: Fmod for BOXboxbox/Desktop/deceleration sounds.bank
+  Name: deceleration sounds
+  StudioPath: bank:/deceleration sounds
+  lastModified: 639310518289366009
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-5456709609517997774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/acc1
+  m_EditorClassIdentifier: 
+  Path: event:/acc1
+  Guid:
+    Data1: -1537077353
+    Data2: 1153357098
+    Data3: -541268566
+    Data4: 1614361513
+  Banks:
+  - {fileID: -7596317117741908542}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4446262837397299218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/acc5
+  m_EditorClassIdentifier: 
+  Path: event:/acc5
+  Guid:
+    Data1: -1913457482
+    Data2: 1108438654
+    Data3: -246199917
+    Data4: 1017834041
+  Banks:
+  - {fileID: -7596317117741908542}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-303578074814197611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/decc3
+  m_EditorClassIdentifier: 
+  Path: event:/decc3
+  Guid:
+    Data1: -2128167926
+    Data2: 1231692646
+    Data3: 28667526
+    Data4: -1195898428
+  Banks:
+  - {fileID: -5484539839232782520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 4831902593790744860}
+  - {fileID: 1088794709225337118}
+  - {fileID: -7596317117741908542}
+  - {fileID: -5484539839232782520}
+  EditorEvents:
+  - {fileID: 1594121508184923685}
+  - {fileID: -5456709609517997774}
+  - {fileID: -4446262837397299218}
+  - {fileID: 8089247381724768015}
+  - {fileID: -7009350878482633093}
+  - {fileID: 5581499891586546859}
+  - {fileID: 6747283810724111132}
+  - {fileID: -303578074814197611}
+  - {fileID: 8226059801727114697}
+  - {fileID: -7640515821788180462}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 1088794709225337118}
+  StringsBanks:
+  - {fileID: 4831902593790744860}
+  cacheVersion: 131861
+  cacheTime: 639310518289366009
+  SerializableEventsDict:
+  - key: event:/acc4
+    index: 0
+  - key: event:/acc1
+    index: 1
+  - key: event:/acc5
+    index: 2
+  - key: event:/acc3
+    index: 3
+  - key: event:/acc2
+    index: 4
+  - key: event:/decc2
+    index: 5
+  - key: event:/decc5
+    index: 6
+  - key: event:/decc3
+    index: 7
+  - key: event:/decc1 (steady)
+    index: 8
+  - key: event:/decc4
+    index: 9
+--- !u!114 &1088794709225337118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Fmod for BOXboxbox/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639310479010669294
+  FileSizes: []
+  Exists: 1
+--- !u!114 &1594121508184923685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/acc4
+  m_EditorClassIdentifier: 
+  Path: event:/acc4
+  Guid:
+    Data1: 862414461
+    Data2: 1199329323
+    Data3: -1284105542
+    Data4: 1144021043
+  Banks:
+  - {fileID: -7596317117741908542}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4831902593790744860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Fmod for BOXboxbox/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639310479010689246
+  FileSizes:
+  - Name: 
+    Value: 1216
+  Exists: 1
+--- !u!114 &5581499891586546859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/decc2
+  m_EditorClassIdentifier: 
+  Path: event:/decc2
+  Guid:
+    Data1: 72606980
+    Data2: 1102050632
+    Data3: -703607110
+    Data4: 1090837374
+  Banks:
+  - {fileID: -5484539839232782520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6747283810724111132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/decc5
+  m_EditorClassIdentifier: 
+  Path: event:/decc5
+  Guid:
+    Data1: -261936379
+    Data2: 1206069610
+    Data3: 1743762342
+    Data4: -1092334502
+  Banks:
+  - {fileID: -5484539839232782520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8089247381724768015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/acc3
+  m_EditorClassIdentifier: 
+  Path: event:/acc3
+  Guid:
+    Data1: -462153233
+    Data2: 1118674863
+    Data3: -1126356852
+    Data4: 1071314489
+  Banks:
+  - {fileID: -7596317117741908542}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8226059801727114697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/decc1 (steady)
+  m_EditorClassIdentifier: 
+  Path: event:/decc1 (steady)
+  Guid:
+    Data1: -1159168752
+    Data2: 1274286901
+    Data3: -936103770
+    Data4: 1459110167
+  Banks:
+  - {fileID: -5484539839232782520}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0

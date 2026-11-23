@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{c9d8f9c9-6f98-4eed-846e-3eef340b0c13}">
+		<property name="assetPath">
+			<value>V6_gear_03_decel.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.3577708333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{88fdbbf0-5a55-479e-8e1d-4dddf74994d7}</destination>
+		</relationship>
+	</object>
+</objects>
