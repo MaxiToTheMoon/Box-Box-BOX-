@@ -77,7 +77,7 @@ public class ExplodeHandler : MonoBehaviour
             dir = (dir + Vector3.up * 0.2f + Random.insideUnitSphere * 0.2f).normalized;
 
             float strength = (apply ? 2.5f : 0.1f) * Random.Range(0.2f, 0.7f);
-            rb.AddForce(dir * strength, ForceMode.Force);
+            rb.AddForce(dir * strength * 0.1f, ForceMode.VelocityChange);
 
             
 
