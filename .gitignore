@@ -37,6 +37,9 @@ Thumbs.db
 # Visual Studio cache directory
 .vs/
 
+# Local JetBrains IDE settings
+.idea/
+
 # Gradle cache directory
 .gradle/
 
