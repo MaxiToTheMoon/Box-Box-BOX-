@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gearbox
   m_EditorClassIdentifier: 
   itemName: Gearbox
-  icon: {fileID: -7832214784768987486, guid: 9c5ecedcaa1ef974190981d36b3bd765, type: 3}
+  icon: {fileID: 21300000, guid: 3ab1da59d8063f141b449c10ddaf5176, type: 3}
   description: 
   isStackable: 0
   maxStack: 0

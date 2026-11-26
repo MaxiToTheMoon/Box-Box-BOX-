@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Engine
   m_EditorClassIdentifier: 
   itemName: Engine
-  icon: {fileID: -7832214784768987486, guid: 9c5ecedcaa1ef974190981d36b3bd765, type: 3}
+  icon: {fileID: 21300000, guid: 86285ee7e597c9441a05f095644011b7, type: 3}
   description: 
   isStackable: 0
   maxStack: 0

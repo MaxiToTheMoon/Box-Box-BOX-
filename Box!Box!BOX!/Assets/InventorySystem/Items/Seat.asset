@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Seat
   m_EditorClassIdentifier: 
   itemName: Seat
-  icon: {fileID: -7832214784768987486, guid: 9c5ecedcaa1ef974190981d36b3bd765, type: 3}
+  icon: {fileID: 21300000, guid: c3a105aac1fda9041ba87745fa0c5940, type: 3}
   description: 
   isStackable: 0
   maxStack: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Steering_Wheel
   m_EditorClassIdentifier: 
   itemName: Steering_Wheel
-  icon: {fileID: -7832214784768987486, guid: 9c5ecedcaa1ef974190981d36b3bd765, type: 3}
+  icon: {fileID: 21300000, guid: bb6c43c9c1ced33479897f53765f4a48, type: 3}
   description: 
   isStackable: 0
   maxStack: 0

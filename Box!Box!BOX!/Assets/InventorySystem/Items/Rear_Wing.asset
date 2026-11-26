@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Rear_Wing
   m_EditorClassIdentifier: 
   itemName: Rear_Wing
-  icon: {fileID: -7832214784768987486, guid: 9c5ecedcaa1ef974190981d36b3bd765, type: 3}
+  icon: {fileID: 21300000, guid: 838aa5dc21f283c4b960b86ea6b8dd15, type: 3}
   description: 
   isStackable: 0
   maxStack: 0

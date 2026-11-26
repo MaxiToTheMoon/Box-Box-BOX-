@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Battery
   m_EditorClassIdentifier: 
   itemName: Battery
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: c5d88b07b60b5404992cc6caa800ca97, type: 3}
   description: 
   isStackable: 0
   maxStack: 0

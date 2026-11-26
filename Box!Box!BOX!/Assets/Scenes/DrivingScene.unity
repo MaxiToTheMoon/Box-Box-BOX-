@@ -1975,7 +1975,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0423dcb41c150c24da924df83632aecb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  originalObject: {fileID: 0}
   model: {fileID: 0}
 --- !u!114 &1591506752 stripped
 MonoBehaviour:
@@ -2091,6 +2090,7 @@ MonoBehaviour:
   - 40
   - 50
   idleStartBoost: 8
+  respawnDelay: 2
 --- !u!1 &1759882273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2849,6 +2849,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5805569197769787521, guid: dcfa53771dfaa0d4e8c867e1a7ff712c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5888364639730724632, guid: dcfa53771dfaa0d4e8c867e1a7ff712c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.44
@@ -2919,6 +2923,7 @@ PrefabInstance:
     - {fileID: 4135240671813163538, guid: dcfa53771dfaa0d4e8c867e1a7ff712c, type: 3}
     - {fileID: 4524725592299344515, guid: dcfa53771dfaa0d4e8c867e1a7ff712c, type: 3}
     - {fileID: 3840258458122547503, guid: dcfa53771dfaa0d4e8c867e1a7ff712c, type: 3}
+    - {fileID: 588920217932069049, guid: dcfa53771dfaa0d4e8c867e1a7ff712c, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 359720868562907760, guid: dcfa53771dfaa0d4e8c867e1a7ff712c, type: 3}
