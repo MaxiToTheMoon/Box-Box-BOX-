@@ -8,6 +8,13 @@ public class InputHandler : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f || SceneFader.Instance.IsTransitioning ||
+            (RaceManager.Instance != null && RaceManager.Instance.IsRaceFinished))
+        {
+            carHandler.SetInput(Vector2.zero);
+            return;
+        }
+
         Vector2 input = Vector2.zero;
 
         //Keyboard input

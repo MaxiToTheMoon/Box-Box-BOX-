@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 22948515}
   - component: {fileID: 22948514}
   - component: {fileID: 22948513}
+  - component: {fileID: 22948517}
   m_Layer: 5
   m_Name: Go Button
   m_TagString: Untagged
@@ -265,6 +266,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22948511}
   m_CullTransparentMesh: 1
+--- !u!114 &22948517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22948511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9233c4846bce4a57ae5bfdac703b1611, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: {fileID: 192448269}
+  background: {fileID: 22948515}
 --- !u!1 &96000732
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,8 +400,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: GO!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d616a96cdc8058f4cb3f6ffdd414db58, type: 2}
+  m_sharedMaterial: {fileID: 3641886913405327937, guid: d616a96cdc8058f4cb3f6ffdd414db58, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -416,7 +431,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -643,8 +658,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "<size=22>POSITION</size>\r\n<b>16\xB0</b>"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: defff45a457edbd4680e88f222a30300, type: 2}
+  m_sharedMaterial: {fileID: 6000068492948150678, guid: defff45a457edbd4680e88f222a30300, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -786,7 +801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.078431375, g: 0.09019608, b: 0.11372549, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1160,6 +1175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd4e0bb2026ad8f48b0c02fac9c37c43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  notificationsPrefab: {fileID: 3829232084686113881, guid: 544c979809311c746b26ea9019364981, type: 3}
   totalLaps: 4
   competitors: 32
   playerPosition: 16
@@ -1169,52 +1185,64 @@ MonoBehaviour:
   carParts:
   - partName: Tyres
     condition: 100
-    minWear: 20
-    maxWear: 40
+    minWear: 30
+    maxWear: 50
+    maxPenaltySeconds: 8
   - partName: Front Wing
     condition: 100
-    minWear: 4
-    maxWear: 16
+    minWear: 10
+    maxWear: 25
+    maxPenaltySeconds: 4
   - partName: Rear Wing
     condition: 100
-    minWear: 0
-    maxWear: 0
+    minWear: 8
+    maxWear: 23
+    maxPenaltySeconds: 3
   - partName: Brakes
     condition: 100
-    minWear: 0
-    maxWear: 0
+    minWear: 30
+    maxWear: 55
+    maxPenaltySeconds: 5
   - partName: Seat
     condition: 100
-    minWear: 0
-    maxWear: 0
+    minWear: 5
+    maxWear: 30
+    maxPenaltySeconds: 1
   - partName: Steering Wheel
     condition: 100
-    minWear: 0
-    maxWear: 0
+    minWear: 8
+    maxWear: 12
+    maxPenaltySeconds: 2
   - partName: Pedals
     condition: 100
-    minWear: 0
-    maxWear: 0
+    minWear: 10
+    maxWear: 24
+    maxPenaltySeconds: 2
   - partName: Gearbox
     condition: 100
-    minWear: 0
-    maxWear: 0
+    minWear: 17
+    maxWear: 36
+    maxPenaltySeconds: 5
   - partName: Engine
     condition: 100
-    minWear: 0
-    maxWear: 0
+    minWear: 30
+    maxWear: 60
+    maxPenaltySeconds: 7
   - partName: Suspension
     condition: 100
-    minWear: 0
-    maxWear: 0
+    minWear: 15
+    maxWear: 30
+    maxPenaltySeconds: 4
   - partName: Helmet
     condition: 100
-    minWear: 0
-    maxWear: 0
+    minWear: 5
+    maxWear: 20
+    maxPenaltySeconds: 1
   - partName: Battery
     condition: 100
-    minWear: 0
-    maxWear: 0
+    minWear: 20
+    maxWear: 42
+    maxPenaltySeconds: 3
   onLapCompleted:
     m_PersistentCalls:
       m_Calls: []
@@ -1294,8 +1322,8 @@ MonoBehaviour:
 
     <b>1/4</b>'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: defff45a457edbd4680e88f222a30300, type: 2}
+  m_sharedMaterial: {fileID: 6000068492948150678, guid: defff45a457edbd4680e88f222a30300, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1441,15 +1469,15 @@ MonoBehaviour:
     Tyres 100% / -20
     to -40%'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f0d1b4a2da99f0e4ba30cf7d7bb79220, type: 2}
+  m_sharedMaterial: {fileID: -3199526771613763700, guid: f0d1b4a2da99f0e4ba30cf7d7bb79220, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1466,8 +1494,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
-  m_fontSizeBase: 22
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1479,7 +1507,7 @@ MonoBehaviour:
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -6
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0

@@ -22,6 +22,8 @@ public class SceneFader : MonoBehaviour
 
     private bool isTransitioning;
 
+    public event System.Action TransitionCompleted;
+    public bool IsTransitioning => isTransitioning;
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -78,7 +80,7 @@ public class SceneFader : MonoBehaviour
 
         if (!Application.CanStreamedLevelBeLoaded(sceneName))
         {
-            Debug.LogError($"Scena non disponibile: {sceneName}");
+            Debug.LogError($"Scene unavailable: {sceneName}");
             return;
         }
 
@@ -96,6 +98,8 @@ public class SceneFader : MonoBehaviour
 
         overlay.blocksRaycasts = false;
         isTransitioning = false;
+
+        TransitionCompleted?.Invoke();
     }
 
     private IEnumerator FadeTo(float target)
