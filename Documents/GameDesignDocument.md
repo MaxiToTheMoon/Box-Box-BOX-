@@ -20,7 +20,7 @@ The player manages spare-part supply for the racing team. The objective is to ke
 
 Each cycle consists of three phases:
 
-1. **Manage parts and repair at the pits.** Review the current condition of the car's components and their predicted deterioration. Deposit spare parts from the vehicle's trunk into the separate pit inventory, and replace car components using parts available in either the trunk or the pit inventory. Check the remaining stock and plan what to collect next. Press **VAI!** when ready to begin the supply run.
+1. **Manage parts and repair at the pits.** Review the current condition of the car's components, their predicted deterioration, and the time penalty expected for the next run. The planned repair interaction lets the player deposit spare parts from the vehicle's trunk into the separate pit inventory and replace components using either inventory. Check the remaining stock and plan what to collect next. Press **GO!** when ready to begin the supply run.
 
    ![Prototype screenshot of the pits (from Riccardo Pilotto)](../images/prototypes/box_screen.jpeg)
 
@@ -32,7 +32,9 @@ Each cycle consists of three phases:
 
    ![Prototype screenshot of the parts shop (from Riccardo Pilotto)](../images/prototypes/shop_screen.jpeg)
 
-The loop repeats until the race ends. **VAI!** starts the drive to the shop, while **BOX!** takes the player from the mechanic/shop phase back to the race. The lap and car-condition update occurs upon arrival at the shop.
+The loop repeats until the final pit stop. **GO!** starts the drive to the shop, while **BOX!** returns the player from the shop to the pits. The lap and car-condition update occurs when the supply run is completed. On the final lap, **GO!** becomes **FINISH THE RACE!**: the player can review the remaining component penalty and finish the race without another supply run.
+
+Scene changes use a fade transition. After a supply run, a popup reports positions gained, lost, or unchanged, together with the component penalty applied to that run.
 
 ### Strategic decisions
 
@@ -46,7 +48,24 @@ The player must also balance the parts needed immediately against supplies to ke
 - **Pit inventory:** Stores spare parts deposited at the box and keeps them available for future repairs, separately from the trunk.
 - **Repairs at the pits:** The player can replace car components using spare parts from either inventory. Loading a part at the shop does not install it on the race car; replacement takes place at the pits.
 
-The component types, deterioration rates, consequences of failure, exact trunk capacity, and any capacity limit for the pit inventory will be defined during prototyping.
+The current shop prototype supports dragging parts into inventory slots and hides the shelf item while it is being dragged. Component icons help distinguish the available items.
+
+The race manager includes repair logic that restores a damaged component to 100% at the pits. Connecting this action to the inventory and consuming the replacement part still needs to be completed. The separate pit inventory and transfer flow remain part of the design; their complete implementation is not confirmed by the reviewed commits. Inventory capacities and the final balance of deterioration and penalties remain subject to playtesting.
+
+### Component condition and penalties
+
+The race car has twelve tracked components: tyres, front wing, rear wing, brakes, seat, steering wheel, pedals, gearbox, engine, suspension, helmet, and battery. Each component starts at 100% and loses a random amount of condition within its configured range after each completed supply run.
+
+Damaged components add a time penalty to the supply run. Each part has its own maximum penalty, with the applied fraction determined by its condition:
+
+| Component condition | Status colour | Fraction of maximum penalty |
+| --- | --- | --- |
+| 70-100% | Green | 0% |
+| 40-69% | Yellow | 25% |
+| 20-39% | Orange | 60% |
+| 0-19% | Red | 100% |
+
+The panel shows each component's condition, expected wear per lap, individual penalty, and the total penalty. The penalty for a supply run is taken from the component state at departure; wear applied after that run affects the next decision at the pits. These penalties represent the racing team's performance, separately from collisions involving the mechanic's supply vehicle.
 
 ### Controls
 
@@ -54,16 +73,30 @@ The component types, deterioration rates, consequences of failure, exact trunk c
 | --- | --- |
 | A | Steer left |
 | D | Steer right |
-| W | Shift up |
-| S | Shift down |
-| VAI! button | Confirm the plan and start the supply run |
-| BOX! button | Switch from the mechanic/shop phase back to the race |
+| Left mouse click | Shift up; the vehicle accelerates while in gear |
+| Hold right mouse button | Brake; gears shift down automatically as speed falls |
+| R | Reload the current scene in the driving prototype |
+| GO! button | Confirm the plan and start the supply run |
+| BOX! button | Return from the parts shop to the pits |
+| FINISH THE RACE! button | Apply the final component penalty and show the race result |
+
+The mouse-based driving controls replace the earlier W/S gear controls. Driving input is blocked during scene transitions and while the race-results screen is open.
 
 ### Race progression
 
-Race progression is structured around individual laps. Component deterioration is applied once per lap: reaching the parts shop triggers the transition to the next lap and the corresponding new state of the car. Each completed outward supply run therefore advances the race by one lap. Pressing **BOX!** then returns the player to the race phase with that updated state.
+Race progression is structured around individual laps. Completing an outward supply run advances the race by one lap and applies component deterioration before the shop phase. Pressing **BOX!** then returns the player to the pits with that updated state. The final lap ends at the pits without another drive to the shop.
 
 The race car's condition and the time spent obtaining spare parts determine the team's performance. Quick, well-planned runs help the team remain competitive, while slow runs and unresolved component failures threaten its position.
+
+The current prototype is configured for four laps and 32 competitors, with the player starting in 16th position. Each supply run covers 1,000 Unity units. Its driving time plus the departure component penalty is compared with a 60-second target, using 10 seconds per position and rounding the position change down. These are prototype values to balance through playtesting.
+
+At the final pit stop, the remaining component penalty can only worsen or preserve the current position. The results screen distinguishes **VICTORY!** for first place, **PODIUM FINISH!** for second or third, and **RACE FINISHED** for other positions. It shows the final position and penalty, pauses gameplay, and offers retry and return-to-menu actions.
+
+### Driving and collisions
+
+The road is assembled from reusable sections selected from a pool and moved ahead as the player progresses. Traffic and changes of location are assigned development tasks; the reviewed commits do not yet confirm a complete implementation of either feature.
+
+The supply vehicle has a collision and explosion prototype. After a collision, driving is temporarily disabled, the vehicle's parts react to the impact, and the car is rebuilt after a configured delay. Stronger impacts trigger the explosion behaviour. The player loses time recovering before continuing the supply run.
 
 
 ## Characters
@@ -88,6 +121,8 @@ The driving section uses a stylized 3D low-poly aesthetic, with **Crossy Road** 
 
 Component icons and inventory screens should have a simple visual language, keeping car condition, available parts, and race information easy to read.
 
+The current interface uses Barlow and Barlow Condensed fonts. The car-status panel has a dark background, white component names, grey supporting information, and coloured condition percentages. The final pit button uses a chequered flag pattern to distinguish finishing the race from starting another run.
+
 ## Media list
 
 This section lists the visual and audio assets needed for the game. These assets will be created by the team and imported into Unity. Visual assets will follow the established low-poly style.
@@ -100,7 +135,7 @@ This section lists the visual and audio assets needed for the game. These assets
 - Low-poly road obstacles and scenery.
 - Illustrations or icons for replaceable car components.
 - Interface elements for components, deterioration forecasts, the separate trunk and pit inventories, part deposits and replacements, lap count, race position and supply-run time.
-- **VAI!** and **BOX!** buttons, plus menu and race-results screens.
+- **GO!**, **BOX!**, and **FINISH THE RACE!** buttons, plus menu, position popups, and race-results screens.
 - Visual feedback for vehicle movement, collisions, component damage, and repairs, as required by the final presentation.
 
 ### Audio assets
@@ -111,11 +146,13 @@ This section lists the visual and audio assets needed for the game. These assets
 - Audio cues for component problems and completed repairs.
 - Background music and ambience for the planning and driving phases.
 
+Christophe Karati's November 23 commit adds an FMOD prototype on the `AudioBox` branch, with acceleration and deceleration events for five gears and ten emitters connected in the driving scene. This work is not yet merged into the reviewed `dev` or `main` branches. Integration with the combined gameplay version and the remaining car sounds still needs to be checked.
+
 ## Technical specification
 
-- **Game engine:** Unity 6.0 (6000.0.85f1 in the current project), used to implement and assemble the complete game.
+- **Game engine:** Unity 6.0 (6000.0.85f2 in the reviewed `dev` project), used to implement and assemble the complete game.
 - **Programming language:** C# for gameplay logic and interactions.
-- **Input:** Keyboard controls for driving, with mouse clicks for planning and selecting parts.
+- **Input:** Keyboard steering, mouse controls for gear changes and braking, and mouse interaction for planning and selecting parts.
 - **Visual assets:** 3D models and 2D illustrations imported into Unity.
 - **Audio integration:** FMOD for audio playback and integration with Unity. Audio assets are exported as WAV files.
 
@@ -199,10 +236,47 @@ Built a mechanic's car model based on the iconic Fiat Panda (made by Riccardo Pi
 
 Splitted tasks as follows:
 - Massimiliano Bettarello: implement position, lap and race status manager.
-- Davide Crippa: continuo the shop scene implementation.
+- Davide Crippa: continue the shop scene implementation.
 - Khalil Zribi: continue the driving scene implementation.
 - Christophe Karati: start to implement audio in the project through fmod.
 - Riccardo Pilotto: create the 2D illustrations for the box and the shop, secondairly work on car parts models for the inventory.
+
+### Meeting 4 - November 14
+
+Meeting with everyone, Riccardo Pilotto wasn't able to join in.
+
+Assigned tasks, Christophe Karati will start the FMOD implementation this week.
+Implemented positions, laps and race status manager. Improved the driving scene and controls for gear shifting.
+
+### Week 5
+
+Tasks split as follows:
+
+- Massimiliano Bettarello: implement fading between scenes, logic for distance and times.
+- Davide Crippa: continue the shop scene implementation.
+- Khalil Zribi: continue the driving scene implementation.
+- Christophe Karati: start to implement audio in the project through FMOD.
+- Riccardo Pilotto: create the 2D illustrations for the box and the shop, secondly work on car parts models for the inventory.
+
+### Development notes - November 22
+
+Tasks split as follows:
+
+- Massimiliano Bettarello: implement the transition to the victory/results screen, popups with position updates, component wear, and part repairs.
+- Khalil Zribi: add traffic and changes of location to the driving section.
+- Davide Crippa: implement the car explosion and add component icons.
+- Christophe Karati: work on car sounds.
+- Riccardo Pilotto: create the 2D illustrations for the box and the shop, secondly work on car parts models for the inventory.
+
+### Progress update - November 28
+
+Progress checked against the commits available on GitHub:
+
+- Massimiliano Bettarello: added scene fades, supply-run timing, race progression and component wear. Added component penalties, position popups, final-pit behaviour, race results, and updated UI fonts. Repair logic is present, but the inventory interaction still needs to call it.
+- Davide Crippa: added the shop inventory items and improved shelf dragging and layout. Developed the collision/explosion and vehicle reset behaviour, then added component icons and updated the shop scene.
+- Khalil Zribi: improved driving visuals and controls, with changes merged into `main` and further driving-scene changes. Traffic and location changes remain to be confirmed.
+- Christophe Karati: added the FMOD acceleration and deceleration prototype on `AudioBox`. The audio branch still needs integration with the current gameplay work.
+
 
 ## Changelog
 
@@ -216,3 +290,7 @@ Splitted tasks as follows:
 | October 31, 2026 | Added the Unity 6 project on `dev`. |
 | October 31, 2026 | Added the main menu, driving, pit, and shop scenes on `dev`. |
 | November 2, 2026 | Recorded the October 30 meeting, Unity 6.0 and FMOD decisions, revised visual assets, and November 6 tasks. |
+| November 9, 2026 | Added Week 4 task assignments. |
+| November 19, 2026 | Recorded the November 14 meeting and Week 5 tasks. |
+| November 28, 2026 | Added the November 22 assignments and a progress update based on the team commits through November 26. |
+| November 28, 2026 | Updated controls, component penalties, final-pit flow, race results, collisions, UI and audio status; distinguished implemented work from pending integration. |
